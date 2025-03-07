@@ -1,5 +1,5 @@
 import { describe, expect, test } from "@jest/globals";
-import createFrame from "./challange_2";
+import createFrame from "./challenge_2";
 
 const result_case_1 = `***************
 * midu        *
