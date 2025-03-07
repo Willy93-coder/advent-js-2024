@@ -4,7 +4,7 @@
   "description": "Advent js challenge 2",
   "main": "index.js",
   "scripts": {
-    "start": "npx tsx ./challange_2.ts",
+    "start": "npx tsx ./challenge_2.ts",
     "test": "jest",
     "tsc": "tsc"
   },
