@@ -36,10 +36,21 @@ describe("challenge 3 module with 2 cases every case should be return an object 
     const inventoryObj = organizeInventory(inventoryArr)
 
     // Assert
-    expect(inventoryObj).toBe(inventory1)
+    expect(inventoryObj).toStrictEqual(inventory1)
   })
 
-  test.skip("Case 2 should be return education and art", () => {
+  test("Case 2 should be return education and art", () => {
+    // Arrange
+    const inventoryArr = [
+      { name: 'book', quantity: 10, category: 'education' },
+      { name: 'book', quantity: 5, category: 'education' },
+      { name: 'paint', quantity: 3, category: 'art' }
+    ]
 
+    // Act
+    const inventoryObj = organizeInventory(inventoryArr)
+
+    // Assert
+    expect(inventoryObj).toStrictEqual(inventory2)
   })
 })
